@@ -15,6 +15,7 @@ Use the admin email address set in Settings->General as the email address from w
 The plugin has no settings, does not alter the database and only uses hooks to 
 achieve it's goal. It also should work perfectly fine with Multisite installations.
 
+
 == Screenshots ==
 
 1. A screenshot of the WordPress Settings->General section with the admin email field marked red.
@@ -26,7 +27,14 @@ achieve it's goal. It also should work perfectly fine with Multisite installatio
 
 == Notes == 
 
-Credits: 
+Since version 1.1 you may also overrule this plugin by using the following filters: 
+
+- aeafa_mail_from, [similar to wp_mail_from](https://developer.wordpress.org/reference/hooks/wp_mail_from/)  
+- aeafa_mail_from_name, [similar to wp_mail_from_name](https://developer.wordpress.org/reference/hooks/wp_mail_from_name/)
+
+These work exactly the same as their core WordPress counterparts and allows you to implement your own mail_from and mail_from_name 
+
+*Credits* 
 
 Icon used in the WordPress plugin repository and found in /assets/icon*
 From the series ['Hatch'](http://www.toicon.com/series/hatch) By [Carol Liao](http://www.toicon.com/authors/3)
@@ -54,6 +62,9 @@ From the Internet Archive Book Images on Flickr Commons
 Thanks Internet Archive & Flickr Commons - flickr.com/commons
 
 == Changelog ==
+
+#### 1.1 - November 15, 2016
+- Made the plugin extensible using filters. These filters are available: aeafa_mail_from and aeafa_mail_from_name 
 
 #### 1.0 - September 5, 2016
 - First release

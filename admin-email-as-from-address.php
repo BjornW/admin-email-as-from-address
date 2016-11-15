@@ -4,7 +4,7 @@
  *  Plugin URI:  https://burobjorn.nl
  *  Description: Use the admin email address set in Settings->General as from email address
  *  Author:      Bj&ouml;rn Wijers <burobjorn@burobjorn.nl>
- *  Version:     1
+ *  Version:     1.1
  *  Author URI:  https://burobjorn.nl
  *  License:     GPL2 or later
  **/
@@ -47,7 +47,7 @@ if( ! class_exists( 'AdminEmailAsFromAddress' ) ) {
     function set_from_email( $email ) {
       $admin_email = get_bloginfo( 'admin_email' );  
       $mail = empty( $admin_email ) ? $email : $admin_email; 
-      return $mail;
+      return apply_filters( 'aeafa_mail_from', $mail);
     }
 
 
@@ -63,7 +63,7 @@ if( ! class_exists( 'AdminEmailAsFromAddress' ) ) {
      *   
      **/ 
     function set_from_name( $name ){
-      return 'WordPress';
+      return apply_filters( 'aeafa_mail_from_name', 'WordPress'); 
     }
   }
   $admin_email_as_from_address = new AdminEmailAsFromAddress; 
