@@ -1,8 +1,8 @@
 === Admin Email As From Address ===
-Contributors: BjornW
-Tags: email, admin email, from email address
+Contributors: BjornW, RamonFincken
+Tags: email, admin email, from email address, from email sender, from email name
 Requires at least: 4.5
-Tested up to: 4.6
+Tested up to: 4.6.1
 Stable tag:trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,8 +12,7 @@ Use the admin email address as the from email address
 == Description ==
 Use the admin email address set in Settings->General as the email address from which WordPress sends email.
 
-The plugin has no settings, does not alter the database and only uses hooks to 
-achieve it's goal. It also should work perfectly fine with Multisite installations.
+The plugin has two easy settings and programmer hook support to set as new From email address and a From name. It also should work perfectly fine with Multisite installations.
 
 
 == Screenshots ==
@@ -62,6 +61,8 @@ From the Internet Archive Book Images on Flickr Commons
 Thanks Internet Archive & Flickr Commons - flickr.com/commons
 
 == Changelog ==
+#### 1.2 - November 16, 2016
+- Created General settings option fields to set From sender name and From sender email address. The filters aeafa_mail_from and aeafa_mail_from_name will still override these fields.
 
 #### 1.1 - November 15, 2016
 - Made the plugin extensible using filters. These filters are available: aeafa_mail_from and aeafa_mail_from_name 

@@ -1,5 +1,10 @@
 Changelog
 =========
+#### 1.2 - November, 16 2016
+
+**Improvements**
+
+- Created General settings option fields to set From sender name and From sender email address. The filters aeafa_mail_from and aeafa_mail_from_name will still override these fields.
 
 #### 1.1 - November, 15 2016
 
