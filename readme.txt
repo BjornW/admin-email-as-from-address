@@ -18,6 +18,7 @@ The plugin has two easy settings and programmer hook support to set as new From 
 == Screenshots ==
 
 1. A screenshot of the WordPress Settings->General section with the admin email field marked red.
+2. A screenshot of the WordPress Settings->General section with the extra fields for setting the From email address and name.
 
 == Installation ==
 1. Upload the `admin-email-as-from-address` directory to the `/wp-content/plugins/` directory
@@ -62,7 +63,8 @@ Thanks Internet Archive & Flickr Commons - flickr.com/commons
 
 == Changelog ==
 #### 1.2 - November 16, 2016
-- Created General settings option fields to set From sender name and From sender email address. The filters aeafa_mail_from and aeafa_mail_from_name will still override these fields.
+- Created General settings option fields to set From sender name and From sender email address. The filters aeafa_mail_from and aeafa_mail_from_name will still override these fields. Props Ramon Fincken. 
+See also the included screenshot-2.png
 
 #### 1.1 - November 15, 2016
 - Made the plugin extensible using filters. These filters are available: aeafa_mail_from and aeafa_mail_from_name 
