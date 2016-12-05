@@ -1,5 +1,5 @@
 === Admin Email As From Address ===
-Contributors: BjornW, RamonFincken
+Contributors: BjornW, Ramon Fincken
 Tags: email, admin email, from email address, from email sender, from email name
 Requires at least: 4.5
 Tested up to: 4.6.1
